@@ -2,7 +2,7 @@ title: "DBS"
 author: "Dhoomil B Sheta"
 description: "A blog on my experiments and experiences"
 more: "Read more..."
-url: "https://dbsheta.github.io/"
+url: "https://dbsheta.github.io"
 baseurl: "/"
 paginate: 4
 permalink: pretty
@@ -10,7 +10,7 @@ excerpt_separator: "\n\n\n" # two blank lines
 
 style:
   minimalist: false
-  dark: true
+  dark: false
 
 navigation:
   - index.html
