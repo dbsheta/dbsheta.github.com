@@ -3,14 +3,14 @@ author: "Dhoomil B Sheta"
 description: "A blog on my experiments and experiences"
 more: "Read more..."
 url: "https://dbsheta.github.io/"
-baseurl: "/contrast"
-paginate: 2
+baseurl: "/"
+paginate: 4
 permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
 
 style:
   minimalist: false
-  dark: false
+  dark: true
 
 navigation:
   - index.html
