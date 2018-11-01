@@ -3,7 +3,9 @@ title: "Home"
 layout: blank
 ---
 <main>
-  <script>console.log(paginator.posts)</script>
+  {% if paginator.total_pages == 0 %}
+  <h1>No Posts Yet!</h1>
+  {% endif %}
   {% for page in paginator.posts %}
   <article>
     <header>
