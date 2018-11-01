@@ -3,7 +3,7 @@ title: "Home"
 layout: blank
 ---
 <main>
-  <h5>paginator.total_pages</h5>
+  <h5>{{ paginator.total_pages }}</h5>
   {% if paginator.total_pages < 1 %} <h1>No Posts Yet!</h1>
     {% endif %}
     {% for page in paginator.posts %}
