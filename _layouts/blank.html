@@ -18,6 +18,7 @@
 %}
 <header>
   <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+  <h4>{{ site.description }}</h4>
   <nav>
     <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<a href="{{ node.url | prepend: site.baseurl }}">{{
         node.title }}</a>{% endfor %}</div>
