@@ -1,9 +1,9 @@
-title: "DBS"
-author: "Dhoomil B Sheta"
-description: "A blog on my experiments and experiences"
-more: "Read more..."
-url: "https://dbsheta.github.io/"
-baseurl: "/"
+title: 'DBS'
+author: 'Dhoomil B Sheta'
+description: 'A blog on my experiments and experiences'
+more: 'Read more...'
+url: 'https://dbsheta.github.io/'
+baseurl: '/'
 paginate: 2
 permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
@@ -16,16 +16,21 @@ navigation:
   - index.html
   - archive.html
   - about.md
+  -
 
 comments:
-  disqus: "dbsheta"
+  disqus: 'dbsheta'
 #  isso: "comments.mysite.org"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
-  - twitter: "https://twitter.com/twitter/"
-  - github: "https://github.com/dbsheta"
-  - envelope: "mailto:dbsheta@outlook.com"
+  - linkedin: 'https://www.linkedin.com/in/dhoomilsheta/'
+  - github: 'https://github.com/dbsheta'
+  - envelope: 'mailto:dbsheta@outlook.com'
 
-defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
-sass: {style: expanded}
+defaults:
+  [
+    { scope: { path: '' }, values: { layout: 'default' } },
+    { scope: { path: '', type: 'posts' }, values: { comments: true } },
+  ]
+sass: { style: expanded }
 plugins: [jekyll-feed, jekyll-paginate]
