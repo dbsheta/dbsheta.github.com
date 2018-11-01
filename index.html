@@ -3,6 +3,7 @@ title: "Home"
 layout: blank
 ---
 <main>
+  <h1>{{ paginator.total_pages }}</h1>
   {% for page in paginator.posts %}
   <article>
     <header>
