@@ -32,4 +32,4 @@ defaults:
     { scope: { path: '', type: 'posts' }, values: { comments: true } },
   ]
 sass: { style: expanded }
-plugins: [jekyll-feed, jekyll-paginate]
+plugins: [jekyll-feed, jekyll-paginate, jekyll-seo-tag]
