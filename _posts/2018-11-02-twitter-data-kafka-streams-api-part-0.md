@@ -13,16 +13,17 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 ![Source: [https://kafka.apache.org/images/kafka_diagram.png](https://kafka.apache.org/images/kafka_diagram.png)](https://cdn-images-1.medium.com/max/2706/0*f_7HXjtx0Nva3RQR.png)*Source: [https://kafka.apache.org/images/kafka_diagram.png](https://kafka.apache.org/images/kafka_diagram.png)*
- 
-<br> 
+
+
+<br>
 ## The Inspiration
 
 I recently read the book [Kafka: The Definitive Guide](https://www.confluent.io/resources/kafka-the-definitive-guide/) by the creators of Kafka. It is truly a wonderful book for anyone who wants to start developing applications with Kafka as well as anyone who wants to know the internals of such a unique platform which is used by most of the Fortune 500 companies.
 
-<br>  
+<br> 
 ## The Plan
 
-In this series, I’ll be exploring various aspects of Apache Kafka all through hands-on.
+In this series, I’ll be exploring various aspects of Apache Kafka, all by implementing cool data pipeline
 
 1. We’ll start by setting up a Kafka Cluster in cloud/locally
 
