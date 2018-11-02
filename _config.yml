@@ -25,6 +25,7 @@ comments:
 links: # see http://fontawesome.io/icons/#brand for all possible icons
   - linkedin: 'https://www.linkedin.com/in/dhoomilsheta/'
   - github: 'https://github.com/dbsheta'
+  - facebook: 'https://www.facebook.com/dhoomil.sheta'
   - envelope: 'mailto:dbsheta@outlook.com'
 
 defaults:
