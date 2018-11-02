@@ -12,13 +12,13 @@ medium:
 
 ![Source: [https://kafka.apache.org/images/kafka_diagram.png](https://kafka.apache.org/images/kafka_diagram.png)](https://cdn-images-1.medium.com/max/2706/0*f_7HXjtx0Nva3RQR.png)*Source: [https://kafka.apache.org/images/kafka_diagram.png](https://kafka.apache.org/images/kafka_diagram.png)*
 
-
+<br><br>
 
 ### The Inspiration
 
 I recently read the book [Kafka: The Definitive Guide](https://www.confluent.io/resources/kafka-the-definitive-guide/) by the creators of Kafka. It is truly a wonderful book for anyone who wants to start developing applications with Kafka as well as anyone who wants to know the internals of such a unique platform which is used by most of the Fortune 500 companies.
 
-
+<br><br>
 
 ### The Plan
 
@@ -36,7 +36,7 @@ In this series, I’ll be exploring various aspects of Apache Kafka all through 
 
 1. Finally, if everything goes well, we’ll try to tweak our architecture and implement Notification service using Firebase and Kafka which will send push notifications to user if his/her tweet has negative sentiment!
 
-
+<br><br>
 
 _**Let’s begin!**_
 ![[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*U_EwY9N-91IXddnk)*[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
