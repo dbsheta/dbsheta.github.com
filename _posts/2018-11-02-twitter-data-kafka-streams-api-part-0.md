@@ -1,6 +1,6 @@
 ---
 title: "Processing Streaming Twitter Data using Kafka Streams API - The Plan"
-date: 2018-11-01 00:30:00
+date: 2018-11-01 23:15:00
 categories: [kafka, real-time]
 medium: 
 ---
