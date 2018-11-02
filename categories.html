@@ -10,14 +10,14 @@ title: Categories
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <header>
           <div id="#{{ category_name | slugize }}"></div>
-          <h3 class="category-head">{{ category_name }}</h3>
+          <h1 class="category-head">{{ category_name }}</h1>
           <a name="{{ category_name | slugize }}"></a>
         <header>
 
         
         {% for post in site.categories[category_name] %}
-          <li class="archive-item">
-            <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+          <li>
+            <h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
           </li>
         {% endfor %}
       </div>
