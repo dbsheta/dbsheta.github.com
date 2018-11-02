@@ -16,17 +16,8 @@ I recently read the book [Kafka: The Definitive Guide](https://www.confluent.io/
 ### The Plan
 In this series, I’ll be exploring various aspects of Apache Kafka all through hands-on.
 1. We’ll start by setting up a Kafka Cluster in cloud/locally
-
 2. After that, we’ll write a Producer Client which will fetch tweets continuously using Twitter API in real-time and push them to Kafka.
-
 3. Then, we will implement an app using Kafka Streams API, which will consume the tweets from Kafka in real-time and do basic processing on the them like finding number of tweets per user and most used words (i.e word count).
-
 4. We’ll then venture into more cool stuff like writing our own Kafka Connector which will use twitter as data source and learning to use Apache NiFi to achieve the same with less effort.
-
 5. We’ll use Spark Streaming to do sentiment analysis on real-time twitter data
-
 6. Finally, if everything goes well, we’ll try to tweak our architecture and implement Notification service using Firebase and Kafka which will send push notifications to user if his/her tweet has negative sentiment!
- 
- 
-_**Let’s begin!**_
-
