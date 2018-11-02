@@ -39,4 +39,4 @@ In this series, I’ll be exploring various aspects of Apache Kafka, all by impl
  
  <br> 
 ## Let’s begin!
-![[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*U_EwY9N-91IXddnk)
+![[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*U_EwY9N-91IXddnk)*
