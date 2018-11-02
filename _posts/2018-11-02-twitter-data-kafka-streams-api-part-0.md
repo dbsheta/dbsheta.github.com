@@ -23,13 +23,13 @@ I recently read the book [Kafka: The Definitive Guide](https://www.confluent.io/
 <br> 
 ## The Plan
 
-In this series, I’ll be exploring various aspects of Apache Kafka, all by implementing cool data pipeline
+In this series, I’ll be exploring various aspects of Apache Kafka, all by implementing cool data pipeline:
 
 1. We’ll start by setting up a Kafka Cluster in cloud/locally
 
-1. After that, we’ll write a Producer Client which will fetch tweets continuously using Twitter API in real-time and push them to Kafka.
+1. After that, we’ll write a Producer Client which will fetch latest tweets continuously using Twitter API and push them to Kafka.
 
-1. Then, we will implement an app using Kafka Streams API, which will consume the tweets from Kafka in real-time and do basic processing on the them like finding number of tweets per user and most used words (i.e word count).
+1. Then, we will implement an app using Kafka Streams API, which will consume the tweets from Kafka in real-time and do basic processing on them like finding number of tweets per user and most used words (i.e word count).
 
 1. We’ll then venture into more cool stuff like writing our own Kafka Connector which will use twitter as data source and learning to use Apache NiFi to achieve the same with less effort.
 
@@ -39,4 +39,4 @@ In this series, I’ll be exploring various aspects of Apache Kafka, all by impl
  
  <br> 
 ## Let’s begin!
-![[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*U_EwY9N-91IXddnk)*[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![[By Amine Rock Hoovr](https://unsplash.com/@hoovr01?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*U_EwY9N-91IXddnk)
