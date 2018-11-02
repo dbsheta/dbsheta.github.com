@@ -9,7 +9,7 @@ I'm **Dhoomil Sheta**. I currently work as a **Specialist Programmer** in Strate
 
 Through this blog, I'll try to share my experiments and experiences with recent advancements in tech. 
 
-I am a polyglot who knows Python, Java, Kotlin, Go, Scala and C++. Being an experienced android developer, I always try out new SDK features. I have experience in machine learning and deep learning(one paper under review). I have also worked on web development projects using Angular, Spring, Flask, etc. 
+I am a polyglot who knows Python, Java, Kotlin, Go, Scala and C++. I am an experienced Android developer. I have experience in Big Data, Machine Learning and Deep Learning(one paper under review). I have also worked on web development projects using Angular, Spring, Flask, etc. 
 
 Having said that, this blog will contain articles based on almost all technologies that I find interesting or worth trying out. My posts may not always be purely informative as they are experiments. Some of them may be flops as well, but I'd still share them as it was a lesson for me and maybe save your time as well (if you were planning to go down the same road!). 
 
