@@ -1,6 +1,7 @@
 ---
 title: Pagination works
 date: 2018-09-01 00:30:00
+categories: [testing, pagination, temp]
 ---
 
 
