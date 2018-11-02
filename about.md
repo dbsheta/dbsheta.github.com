@@ -4,7 +4,7 @@ title: 'About'
 
 ### About Me
 
-I'm **Dhoomil Sheta**. I currently work as an **Specialist Programmer** in Strategic Technologies Division(STG) at Infosys. 
+I'm **Dhoomil Sheta**. I currently work as a **Specialist Programmer** in Strategic Technologies Division(STG) at Infosys. 
 
 Through this blog, I'll try to share my experiments and experiences with recent advancements in tech. 
 
