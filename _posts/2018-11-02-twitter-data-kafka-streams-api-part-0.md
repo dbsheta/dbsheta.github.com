@@ -2,7 +2,6 @@
 title: "Processing Streaming Twitter Data using Kafka Streams API - The Plan"
 date: 2018-11-01 23:15:00 +05:30
 categories: [kafka, real-time]
-medium: 
 ---
 
 ### What is Apache Kafka?
