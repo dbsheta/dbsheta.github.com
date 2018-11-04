@@ -10,7 +10,7 @@ As per the plan I laid out in my previous post, I’ll start by setting up a Kaf
 
 Also, in this series, main focus will be on how-to rather than how-does-it. We’ll spend most of time learning how to implement various use cases than how does Kafka/Spark/Zookeeper does it. However, We’ll go into theory mode if there aren’t any sources already available on the web.
 
-
+<!--more-->
 
 ## Apache Zookeeper
 
