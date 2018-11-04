@@ -4,7 +4,6 @@ date: 2018-11-05 00:25:00 +05:30
 categories: [kafka, zookeeper, setup]
 excerpt_separator: <!--more-->
 ---
-# Processing Streaming Twitter Data using Kafka and Spark — Part 1: Setting Up Kafka Cluster
 
 As per the plan I laid out in my previous post, I’ll start by setting up a Kafka Cluster. I’ll primarily be working on Google Cloud instances throughout this series, however, I’ll also lay down steps to setup the same in your local machines as well.
 
