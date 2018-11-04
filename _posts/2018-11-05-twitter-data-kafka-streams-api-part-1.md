@@ -8,9 +8,9 @@ excerpt_separator: <!--more-->
 
 As per the plan I laid out in my previous post, I’ll start by setting up a Kafka Cluster. I’ll primarily be working on Google Cloud instances throughout this series, however, I’ll also lay down steps to setup the same in your local machines as well.
 
-Also, in this series, main focus will be on how-to rather than how-does-it. We’ll spend most of time learning how to implement various use cases than how does Kafka/Spark/Zookeeper does it. However, We’ll go into theory mode if there aren’t any sources already available on the web.
+Also, in this series, main focus will be on how-to rather than how-does-it. We’ll spend most of time learning how to implement <!--more--> various use cases than how does Kafka/Spark/Zookeeper does it. However, We’ll go into theory mode if there aren’t any sources already available on the web.
 
-<!--more-->
+
 
 ## Apache Zookeeper
 
@@ -125,4 +125,4 @@ If you see output in the console consumer window, congratulations! You successfu
 We will use the same setup in the upcoming few articles. In the next article, we will see how we can implement a Kafka Client which will read latest tweets from Twitter and push them into Kafka.
 
 **Until then,**
-![](https://medium.com/media/62764513b2cb4743d0c8cf9e519d5942)
+![Goodbye](https://medium.com/media/62764513b2cb4743d0c8cf9e519d5942)
