@@ -77,22 +77,22 @@ Update kafka server.properties file in all instances (hostname/IP) to contain th
 ```
 
 <br>
-### Single Node Multi Broker (SNMB):
+### ***Single Node Multi Broker*** (SNMB):
 
 For folks who don’t have cloud instances handy, you can setup a cluster locally. 
 
 1. You have to copy *server.properties* file and copy it 3 times with different name like server1.properties, server2.properties, etc.
 
-1. Every Kafka broker must have an integer identifier. Open configuration file and change *broker.id=1 *for 1st server* broker.id=2 *for 2nd and so on. A good guideline is to set this value to something intrinsic to the host so that when performing maintenance it is easier to map broker IDs to hosts
+1. Every Kafka broker must have an integer identifier. Open configuration file and change *broker.id=1 for 1st server *broker.id=2* for 2nd and so on. A good guideline is to set this value to something intrinsic to the host so that when performing maintenance it is easier to map broker IDs to hosts
 
-1. As you will be running multiple instances on same machine, change port configuration so each process uses different port number. Open configuration file and change *port=9092 *on 1st, 9093 on 2nd and so on.
+1. As you will be running multiple instances on same machine, change port configuration so each process uses different port number. Open configuration file and change *port=9092* on 1st, 9093 on 2nd and so on.
 
 1. Also, in future, whenever I give a command for MNMB setup, you should automatically map it to your configuration
 
 <br>
 ### **Multi Node Multi Broker (MNMB):**
 
-1. Open configuration file and change *broker.id=1 *for 1st server,* broker.id=2 *for 2nd and so on.
+1. Open configuration file and change *broker.id=1* for 1st server, *broker.id=2* for 2nd and so on.
 
 1. Add the canonical hostnames of your servers in your hosts file if they are not public. Or you’ll need to overwite *on each server instance advertised.listeners=PLAINTEXT://your.host.name:9092*
 
