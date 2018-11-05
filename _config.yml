@@ -4,7 +4,7 @@ description: 'A blog on my experiments and experiences with technology'
 more: 'Read more...'
 url: 'https://dhoomilsheta.ml'
 baseurl: '/'
-paginate: 2
+paginate: 3
 permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
 
