@@ -53,17 +53,18 @@ To configure a Zookeeper ensemble, all servers must have a common configuration 
 Except the last command, run all previous commands on all servers. In addition to that following are to be run on all servers:
 
 1. Add list of your servers (hostname/IP) to bottom of the zookeeper configuration file:
-
 ```properties
     server.1=X.X.X.X:2888:3888
     server.2=Y.Y.Y.Y:2888:3888
     server.3=Z.Z.Z.Z:2888:3888
 ```
+
 2. Add myid file at dataDir location which in my case is */tmp/zookeeper*:
 ```bash
     touch /tmp/zookeeper/myid
     echo 1 >> /tmp/zookeeper/myid
 ```
+
 3. After making the above changes, start zookeeper on all servers one by one. 
 ```bash
     bin/zkServer.sh start conf/zookeeper.properties
