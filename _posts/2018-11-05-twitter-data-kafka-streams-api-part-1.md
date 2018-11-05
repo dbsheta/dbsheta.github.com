@@ -9,6 +9,8 @@ As per the plan I laid out in my previous post, I’ll start by setting up a Kaf
 
 Also, in this series, main focus will be on how-to rather than how-does-it. We’ll spend most of time learning how to implement <!--more--> various use cases than how does Kafka/Spark/Zookeeper does it. However, We’ll go into theory mode if there aren’t any sources already available on the web.
 
+<br><br>
+
 
 
 ## Apache Zookeeper
@@ -22,7 +24,9 @@ While you can get a quick-and-dirty single node  Zookeeper server up and running
 
 I assume you have JDK1.8 installed. If not Linux/macOS users can download openJDK using package managers. Windows users can go to Oracle’s website and install the same.
 
-<br>
+<br><br>
+
+
 ### **Zookeeper Standalone Mode**
 
 Those who don’t have any cloud resources available like Google Cloud or Azure or AWS, can run a single node standalone Zookeeper instance. Spinning such an instance is fairly simple
@@ -30,15 +34,17 @@ Those who don’t have any cloud resources available like Google Cloud or Azure 
 Download latest version of [Zookeeper](https://www.apache.org/dyn/closer.cgi/zookeeper/).
 
 ```bash
-    # tar -xvf zookeeper-X.X.X.tar.gz -C /opt
-    # ln -s /opt/zookeeper-X.X.X /opt/zookeeper
-    # cd /opt/zookeeper
-    # cat conf/zoo_sample.cfg >> zookeeper.properties
-    # bin/zkServer.sh start conf/zookeeper.properties
+    tar -xvf zookeeper-X.X.X.tar.gz -C /opt
+    ln -s /opt/zookeeper-X.X.X /opt/zookeeper
+    cd /opt/zookeeper
+    cat conf/zoo_sample.cfg >> zookeeper.properties
+    bin/zkServer.sh start conf/zookeeper.properties
 ```
 
-<br>
-### Zookeeper Ensemble
+<br><br>
+
+
+### **Zookeeper Ensemble**
 
 A Zookeeper cluster is called an *ensemble*. Due to the algorithm used, it is recommended that ensembles contain an odd number of servers (3, 5,…) as a majority of ensemble members (a quorum) must be working in order for Zookeeper to respond to requests. It is also *not* *recommended* to run more than seven nodes, as performance can start to degrade due to the nature of the consensus protocol.
 
@@ -55,21 +61,23 @@ Except the last command, run all previous commands on all servers. In addition t
 ```
 2. Add myid file at dataDir location which in my case is */tmp/zookeeper*:
 ```bash
-    # touch /tmp/zookeeper/myid
-    # echo 1 >> /tmp/zookeeper/myid
+    touch /tmp/zookeeper/myid
+    echo 1 >> /tmp/zookeeper/myid
 ```
 3. After making the above changes, start zookeeper on all servers one by one. 
 ```bash
-    # bin/zkServer.sh start conf/zookeeper.properties
+    bin/zkServer.sh start conf/zookeeper.properties
 ```
+
+<br><br>
 
 
 ## Setting up Kafka
 
 Download latest version of [Kafka](http://mirrors.wuchna.com/apachemirror/kafka/2.0.0/kafka_2.11-2.0.0.tgz) on all your serves.
 ```bash
-    # tar -xvf kafka_2.11-0.11.0.0.tgz –C /opt
-    # ln -s /opt/kafka_2.XX /opt/kafka
+    tar -xvf kafka_2.11-0.11.0.0.tgz –C /opt
+    ln -s /opt/kafka_2.XX /opt/kafka
 ```
 Update kafka server.properties file in all instances (hostname/IP) to contain the below line. This file is located in */opt/kafka/config/server.properties*
 ```properties
@@ -77,7 +85,7 @@ Update kafka server.properties file in all instances (hostname/IP) to contain th
 ```
 
 <br>
-### ***Single Node Multi Broker*** (SNMB):
+### **Single Node Multi Broker (SNMB):**
 
 For folks who don’t have cloud instances handy, you can setup a cluster locally. 
 
@@ -97,17 +105,17 @@ For folks who don’t have cloud instances handy, you can setup a cluster locall
 1. Add the canonical hostnames of your servers in your hosts file if they are not public. Or you’ll need to overwite on each server instance *advertised.listeners=PLAINTEXT://your.host.name:9092*
 
 
-<br>
+<br><br>
 ## Testing Full Setup
 
 1. We have already started a zookeeper ensemble, now lets start Kafka in all our servers as well.
 ```bash
-    # cd /opt/kafka
-    # bin/kafka-server-start.sh config/server.properties
+    cd /opt/kafka
+    bin/kafka-server-start.sh config/server.properties
 ```
 2. Let’s create a sample topic with 3 partitions and 2 replicas:
 ```bash
-    # bin/kafka-topics.sh --create --zookeeper X.X.X.X:2181 --replication-factor 2 --partitions 3--topic sample_test
+    bin/kafka-topics.sh --create --zookeeper X.X.X.X:2181 --replication-factor 2 --partitions 3--topic sample_test
 ```
 3. Kafka has a command line consumer that will dump out messages to standard output.
 ```bash
@@ -115,7 +123,7 @@ For folks who don’t have cloud instances handy, you can setup a cluster locall
 ```
 4. Run the producer and then type a few messages into the console to send to the server.
 ```bash
-    # bin/kafka-console-producer.sh --broker-list  X.X.X.X:9092 --topic sample_test
+    bin/kafka-console-producer.sh --broker-list  X.X.X.X:9092 --topic sample_test
     > Hello, World!
     > Hello from the other side.
 ```
