@@ -64,7 +64,7 @@ Let’s go ahead and start implementing a Kafka Producer Client which will utili
 
 1. Open IDE of your choice and create a new maven project. I’ll name mine *kafka-twitter-producer*
 
-1. Add Kafka,Twitter and Gson dependencies in *pom.xml *and rebuild the project.
+1. Add Kafka,Twitter and Gson dependencies in *pom.xml* and rebuild the project.
 
 <script src="https://gist.github.com/dbsheta/3e29a847b58498c15b9d3be0066443d4.js"></script>
 
@@ -81,7 +81,7 @@ Now, we’ll copy the secrets and tokens from Twitter Developer console.
 
 The tweet returned by Twitter API is very large string(json) and contains all details we require for our project. You can find full response [here](https://github.com/dbsheta/kafka-twitter-producer/blob/master/src/main/resources/tweet.json).
 
-We create two entities *Tweet *and *User *to hold json responses since it would be easier to work with POJOs than with String responses. At this point, while sending tweets to Kafka, we’ll call ***toString() ***on the Tweet object so we don’t have to write serializer for our custom class.
+We create two entities *Tweet* and *User* to hold json responses since it would be easier to work with POJOs than with String responses. At this point, while sending tweets to Kafka, we’ll call ***toString()*** on the Tweet object so we don’t have to write serializer for our custom class.
 > **Note**: It is better to use a serialization library in such scenarios. We’ll see in a future post, how we can use Avro to serialize/de-serialize java objects while sending to or consuming from Kafka. We’ll discuss benefits of using Avro with Schema registry at that point.
 
 <script src="https://gist.github.com/dbsheta/3a862ff936d925ad73e06c24c7aa0236.js"></script>
