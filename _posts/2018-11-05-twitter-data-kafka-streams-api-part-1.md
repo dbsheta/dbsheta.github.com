@@ -123,5 +123,6 @@ If you see output in the console consumer window, congratulations! You successfu
 
 We will use the same setup in the upcoming few articles. In the next article, we will see how we can implement a Kafka Client which will read latest tweets from Twitter and push them into Kafka.
 
-**Until then,**
-![Goodbye](https://medium.com/media/62764513b2cb4743d0c8cf9e519d5942)
+**Until then,** 
+
+![Goodbye](https://thumbs.gfycat.com/GenuineMenacingImperialeagle-size_restricted.gif)
