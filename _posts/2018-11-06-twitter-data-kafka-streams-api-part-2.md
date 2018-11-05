@@ -109,9 +109,9 @@ Let’s go over the main knobs that we turned here. Rest you can easily find in 
 
 Now, after configuring twitter client as well as producer, we only need to make a connection to twitter using the client, wait for someone to tweet with #bigdata. Once we get a tweet, send it to kafka using producer.
 
-<iframe src="https://medium.com/media/bd1982e9fd9fee6666e5c208d6c28e7d" frameborder=0></iframe>
+<script src="https://gist.github.com/dbsheta/94bac13fd38f21e7f3f035ef00da7305.js"></script>
 
-The client is responsible for fetching latest tweets on #bigdata and push it to BlockingQueue. In the infinite loop, we take one tweet at a time from the queue and push it to kafka by using Tweet ID as ***key*** and the whole tweet as ***value***. Since we have used BlockingQueue, *queue.take() *will block the flow until twitter client fetches new tweet.
+The client is responsible for fetching latest tweets on #bigdata and push it to BlockingQueue. In the infinite loop, we take one tweet at a time from the queue and push it to kafka by using Tweet ID as ***key*** and the whole tweet as ***value***. Since we have used BlockingQueue, *queue.take()* will block the flow until twitter client fetches new tweet.
 
 Full code available at: [https://github.com/dbsheta/kafka-twitter-producer](https://github.com/dbsheta/kafka-twitter-producer)
 
@@ -119,29 +119,30 @@ Full code available at: [https://github.com/dbsheta/kafka-twitter-producer](http
 ## Lights. Camera. Action.
 
 Let’s see our code in action! First, I will create a new topic *bigdata-tweets* with replication factor of 2 and number of partitions 3.
-    ```bash
-    > bin/kafka-topics.sh --create --zookeeper X.X.X.X:2181 --replication-factor 2 --partitions 3 --topic bigdata-tweets
-    
+```bash
+> bin/kafka-topics.sh --create --zookeeper X.X.X.X:2181 --replication-factor 2 --partitions 3 --topic bigdata-tweets
 
-    > bin/kafka-topics.sh --describe --zookeeper X.X.X.X:2181 --topic bigdata-tweets
+
+> bin/kafka-topics.sh --describe --zookeeper X.X.X.X:2181 --topic bigdata-tweets
 
     Topic:bigdata-tweets    PartitionCount:3    ReplicationFactor:2    Configs:
-        Topic: bigdata-tweets    Partition: 0    Leader: 0    Replicas: 0,1    Isr: 0,1
-        Topic: bigdata-tweets    Partition: 1    Leader: 1    Replicas: 1,2    Isr: 1,2
-        Topic: bigdata-tweets    Partition: 2    Leader: 2    Replicas: 2,0    Isr: 2,0
-    ```
+    Topic: bigdata-tweets    Partition: 0    Leader: 0    Replicas: 0,1    Isr: 0,1
+    Topic: bigdata-tweets    Partition: 1    Leader: 1    Replicas: 1,2    Isr: 1,2
+    Topic: bigdata-tweets    Partition: 2    Leader: 2    Replicas: 2,0    Isr: 2,0
+```
+    
 Now, just to verify that the tweets really were persisted by kafka, we’ll start a simple console consumer provided with Kafka distribution.
-    ```bash
+```bash
     > bin/kafka-console-consumer.sh --bootstrap-server bigdata-1:9092 --topic bigdata-tweets --from-beginning
-    ```
+```
     
 Run the TwitterKafkaProducer app. It should start sending data to Kafka.
 
 You should see something like this on your console consumer:
 ```bash
-    Tweet{id=1059434252306210817, text='I want to assist to meet you and see your latest tools', lang='en', user=User{id=198639877, name='Antonio Molina', screenName='amj_69', location='Moralzarzal-Madrid-Spain', followersCount=399}, retweetCount=0, favoriteCount=0}
+Tweet{id=1059434252306210817, text='I want to assist to meet you and see your latest tools', lang='en', user=User{id=198639877, name='Antonio Molina', screenName='amj_69', location='Moralzarzal-Madrid-Spain', followersCount=399}, retweetCount=0, favoriteCount=0}
 
-    Tweet{id=1059434263232348160, text='RT @InclineZA: #AI &amp; #MachineLearning: Building use cases &amp; creating Real-Life Benefits &gt;&gt;  https://t.co/noWy1NS3OU
+Tweet{id=1059434263232348160, text='RT @InclineZA: #AI &amp; #MachineLearning: Building use cases &amp; creating Real-Life Benefits &gt;&gt;  https://t.co/noWy1NS3OU
 ```
 
 If you see the tweets like these, congrats my friend, you have created one data pipline! You fetched data from a source (Twitter), pushed it to a message queue, and ultimately consumed it (printed on console).
