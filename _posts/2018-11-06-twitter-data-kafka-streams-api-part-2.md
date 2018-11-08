@@ -153,5 +153,4 @@ If you see the tweets like these, congrats my friend, you have created one data 
 We used Twitter Streaming API along with Kafka Clients API to implement a Producer app which fetches data from twitter and sends it to kafka in real-time. In the next part, we’ll see how we can consume this data to do collect some stats in real-time on streaming data. 
 
 **Until then**…
-
 <p align="center"><img src="https://cdn-images-1.medium.com/max/2000/1*OwkfEOCQTC0YGxZLWx2juQ.gif" alt="Peace out"/></p>
