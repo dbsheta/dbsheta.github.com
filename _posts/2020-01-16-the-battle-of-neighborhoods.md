@@ -4,11 +4,10 @@ date: 2020-01-16 00:25:00 +05:30
 categories: [data science, project, clustering, maps]
 excerpt_separator: <!--more-->
 ---
-<img src="../img/tokyo.jpg"/>
 
 As someone who loves travelling, finding ways to save money and travel low-cost is essential. There's little to save while booking flights and I'd rather pay more to traveling comfortably on a 16Hr flight than try to save and wear myself down even before the trip begins! But we can always save a few bucks on accomodation.
 <!--more-->
-
+<img src="../img/tokyo.jpg"/>
 A hostel is a low-budget accommodation shared among travelers. Staying at hostels is an extremely affordable option for travelers. Not only that, It also gives you a chance to expereince which you would never at a hotel. I've found that experiencing hostel life one of the best ways to travel the world on a budget and here’s why:
 1. You'll save a lot of money trust me.
 2. Meet other like-minded travellers and make new friends around the world!
